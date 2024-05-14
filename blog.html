@@ -1,0 +1,419 @@
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pablo Daniel Viroulaud</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                    <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/profile.jpg" alt="Image">
+                    <h1 class="font-weight-bold">Pablo D. Viroulaud</h1>
+                    <p class="mb-4">
+                        <strong>Bienvenidos a mi sitio.</strong><br>
+                        Aqui podr&aacute;n encontrar informacion sobre mi, mi trayectoria profesional e informaci&oacute;n de diferentes 
+                        proyectos en los que tuve participaci&oacute;n, algunos de ellos trabajando bajo relaci&oacute;n de dependencia, otros de forma independiente y 
+                        algunos como proyecto personal para validar conceptos o experimentar con diferentes tecnolog&iacute;as.<br>                         
+                    </p>
+                    <div class="d-flex justify-content-center mb-5">
+                        <a class="btn btn-outline-primary mr-2" href="https://github.com/pviroulaud/"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="https://www.linkedin.com/in/pablo-daniel-viroulaud-a4318421b"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                    <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+                </div>
+            </div>
+            <div class="content">
+                <!-- Navbar Start -->
+                <div class="container p-0">
+                    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                        <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav m-auto">
+                                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                                <a href="about.html" class="nav-item nav-link">Acerca de mi</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trayectoria</a>
+                                    <div class="dropdown-menu">
+                                        <a href="capacitaciones.html" class="dropdown-item">Capacitaciones</a>
+                                        <a href="timeline.html" class="dropdown-item">Recorrido profesional</a>
+                                        <a href="blog.html" class="dropdown-item">Proyectos</a>
+                                        <a href="demoDashboard.html" class="dropdown-item">Demo Proyectos Personales</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Navbar End -->
+<!-- **************************************************************************************************************                 -->
+ 
+                
+                <!-- Blog List Start -->
+                <div class="container bg-white pt-5">
+                    <div class="row blog-item px-3 pb-5">
+                        <div class="col-md-3">
+                            <img class="img-fluid mb-4 mb-md-0" src="img/codigo.jpg" alt="Image">
+                        </div>
+                        <div class="col-md-9">
+                            <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">Desarrollo de aplicaciones</h3>  
+                            <br>                         
+                            <a class="btn btn-link p-0" onclick="toggleProyectos()">Ver Proyectos <i id="flechaProyectos" class="fa fa-angle-down"></i></a>
+                        </div>
+                        <div class="col-sm-12 d-none" id="detalleProyectos">
+                            <div class="col-sm-12">                               
+                                <p>
+                                    <strong> ON BOARDING </strong> Sistema de gestion de ingresantes para RRHH
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;" onclick="mostrarImagen(this)" src="img/onboarding/Screenshot_1.png" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/onboarding/Screenshot_2.png" alt="Image">
+                                        </div> 
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;" onclick="mostrarImagen(this)"  src="img/onboarding/Screenshot_3.png" alt="Image">
+                                        </div>                                      
+                                    </div>
+                                    <br>
+                                    Sistema para la gestion y seguimiento del proceso de OnBoarding de un candidato a un puesto de trabajo. En primer lugar el administrador configura toda la documentacion que se deberá solicitar a un ingresante (formularios AFIP, Seguros, Obra Social, etc.) 
+                                    quedando armada la solicitud de documentacion, luego se notifica al candidato que tiene una solicitud pendiente de completar en la plataforma. Una vez que el usuario ingresa, visualiza y completa toda la documentacion
+                                    desde la misma plataforma y al finalizar la envia al administrador, el cual puede rechazarla total o parcialmente en caso de que existan errores o aceptarla quedando asi confeccionado el legajo de ingreso. En una segunda
+                                    etapa del proyecto se integro este sistema con el sistema de gestion de RRHH "Addoc Perfil Digital" para que una vez finalizado el proceso de OnBoarding toda la documentacion se incorpore al legajo del empleado.<br>
+                                    El front end con Angular 13. <br>
+                                    El Backend consiste en una arquitectura basada en microservicios desarrollada en .NetCore 5 en la cual se implemento un SSO para la administracion de empresas, usuarios y perfiles para 
+                                    los diferentes productos que se desarrollaron.
+                                </p>
+                            </div>
+
+                            <div class="col-sm-12">                               
+                                <p>
+                                    <strong> FIRMAS </strong> Plataforma de firma electronica
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/firmas/firmas.png" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/firmas/firmas2.png" alt="Image">
+                                        </div>                                      
+                                    </div>
+                                    <br>
+                                    Sistema de gestion de documentos para completar workflows de firma electronica. El usuario administrador sube un documento en formato pdf y selecciona los firmantes del mismo y el tipo decsecuencia de firma el cual puede ser respetando el
+                                    orden o sin hacerlo, una vez que todos los firmantes firmaron el workflow se da por finalizado y el documento con todas las firmas intervinientes queda disponible para el creador del documento y los firmantes.<br>
+                                    El front end esta desarrollado con HTML, CSS y JavaScript. <br>
+                                    El Backend consiste en una arquitectura basada en microservicios desarrollada en .NetCore 5 en la cual se implemento un SSO para la administracion de empresas, usuarios y perfiles para 
+                                    los diferentes productos que se desarrollaron.
+                                </p>
+                            </div>
+                            <div class="col-sm-12">                               
+                                <p>
+                                    <strong> FLEX OFFICE </strong> Plataforma de gestion y reservas de espacios de oficina
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/flex/Screenshot_1.png" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/flex/Screenshot_2.png" alt="Image">
+                                        </div> 
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/flex/Screenshot_3.png" alt="Image">
+                                        </div>                                      
+                                    </div>
+                                    <br>
+                                    Sistema de gestion y reserva de puestos de oficina. El objetivo del sistema nacio durante la pandemia en donde la asistencia a las oficinas debia ser reducida y administrada, para esto se Desarrollo
+                                    la plataforma FlexOffice en la cual el administrador de una oficina sube un plano dibuhado en AutoCad del espacio con los puestos de trabajo que son reservables, a partir de alli el sistema detecta 
+                                    de forma automatica los puestos y los da de alta en el mismo. Finalmente los usuarios registrado ingresan a la plataforma visualizan el plano de la oficina y eligen el puesto, dia y horario para efectuar la reserva
+                                    del mismo modo que si estuviera reservando un asiento de avion o una butaca de teatro.<br>
+                                    El front end esta desarrollado con HTML, CSS y JavaScript. <br>
+                                    El Backend consiste en una arquitectura basada en microservicios desarrollada en .NetCore 5 en la cual se implemento un SSO para la administracion de empresas, usuarios y perfiles para 
+                                    los diferentes productos que se desarrollaron.
+                                </p>
+                            </div>
+
+                            <div class="col-sm-12">                               
+                                <p>
+                                    <strong> Desarrollo de un sistema integrado de reconocimiento electronico con registro de navegacion.</strong>
+                                    <br>
+                                    <div class="row text-center">
+                                        <div class="col-sm-6 ">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wWDixRkpGlA?si=gUXMnyK1ouIBxnMd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        </div>
+                                       
+                                    </div>
+                                    <br>
+                                    Aplicacion desarrollada con .Net Framework 3.5 WinForms. Consiste en multiples aplicaciones las cuales se intercomunican a traves de mensajeria via TCP.
+                                    Los modulos de adquisicion de datos obtienen la informacion por canales UDP y la aplicacion realiza el procesamiento de las señales para obtener la FFT, la forma de onda interceptada y los diagramas I/Q.
+                                    El sistema de mapa es una aplicacion completamente autonoma que compone el mapa sin la utilizacion de APIs externas (como ser Google Maps) ya que por requisitos del sistema el mismo funciona completamente OffLine.
+                                </p>
+                            </div>
+
+                            <div class="col-sm-12 text-right">
+                                <a class="btn btn-link p-0" onclick="toggleProyectos()">Ocultar <i  class="fa fa-angle-up"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row blog-item px-3 pb-5">
+                        <div class="col-md-3">
+                            <img class="img-fluid mb-4 mb-md-0" src="img/pista.jpg" alt="Image">
+                        </div>
+                        <div class="col-md-9">
+                            <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">Balizamiento Aeroportuario</h3>  
+                            <br>                         
+                            <a class="btn btn-link p-0" onclick="toggleBalizamiento()">Ver Proyectos <i id="flechaBalizamiento" class="fa fa-angle-down"></i></a>
+                        </div>
+                        <div class="col-sm-12 d-none" id="detalleBalizamiento">
+                            <div class="col-sm-12">
+                                <p>
+                                    Desarrollo de sistemas de control SCADA (SIEMENS TIA Portal) para sistemas de balizamiento de aeropuertos. 
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/balizamiento/SantaRosa.png" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;" onclick="mostrarImagen(this)"  src="img/balizamiento/RIOHONDO.png" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;" onclick="mostrarImagen(this)"  src="img/balizamiento/sla1.png" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;" onclick="mostrarImagen(this)"  src="img/balizamiento/sla2.png" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;" onclick="mostrarImagen(this)"  src="img/balizamiento/tablero1.jpg" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;" onclick="mostrarImagen(this)"  src="img/balizamiento/tablero2.jpg" alt="Image">
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <br>Proyectos desarrollados: 
+                                    <ul>
+                                        <li>
+                                            2016 - Aeropuerto Internacional de Mendoza. 
+                                        </li>
+                                        <li>
+                                            2017 - Aeropuerto Internacional de Tucumán.
+                                        </li>
+                                        <li>
+                                            2018 - Aeropuerto Internacional de Salta.
+                                        </li>
+                                        <li>
+                                            2019 - Aeropuerto Internacional de Iguazú.
+                                        </li>
+                                        <li>
+                                            2022 - Aeropuerto internacional de Posadas.
+                                        </li>
+                                        <li>
+                                            2023 - Aeropuerto internacional de San Rafael.
+                                        </li>
+                                        <li>
+                                            2023 - Aeropuerto internacional de Rio Hondo.
+                                        </li>
+                                        <li>
+                                            2023 - Aeropuerto de Santa Rosa, La Pampa
+                                        </li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    Desarrollo de sistemas de supervisión de sistemas de balizamiento de aeropuertos (Desarrollados con Visual C# y módulos I/O Ethernet MOXA). 
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/balizamiento/palomar.jpg" alt="Image">
+                                        </div>                                    
+                                    </div>
+                                    <br>Proyectos desarrollados: 
+                                    <ul>
+                                        <li>
+                                            2018 - Aeropuerto del Palomar.
+                                        </li>
+                                        <li>
+                                            2018 - Aeropuerto de Santiago del Estero.
+                                        </li>
+                                    </ul>
+                                    
+                                    
+                                </p>
+                                
+                            </div>
+                            <div class="col-sm-12 text-right">
+                                <a class="btn btn-link p-0" onclick="toggleBalizamiento()">Ocultar <i  class="fa fa-angle-up"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row blog-item px-3 pb-5">
+                        <div class="col-md-3">
+                            <img class="img-fluid mb-4 mb-md-0" src="img/industria.jpg" alt="Image">
+                        </div>
+                        <div class="col-md-9">
+                            <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">Sistemas Industriales</h3>  
+                            <br>                         
+                            <a class="btn btn-link p-0" onclick="toggleIndustria()">Ver Proyectos <i id="flechaIndustria" class="fa fa-angle-down"></i></a>
+                        </div>
+                        <div class="col-sm-12 d-none" id="detalleIndustria">
+                            <div class="col-sm-12">
+                                <p>
+                                    Desarrollo de un sistema de monitoreo de una línea de aire comprimido para la planta de aerosoles de la empresa. 
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;" onclick="mostrarImagen(this)"  src="img/industria/aerosoles1.jpg" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/industria/aerosoles2.jpg" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;" onclick="mostrarImagen(this)"  src="img/industria/aerosoles3.jpg" alt="Image">
+                                        </div>
+                                    </div>
+                                    <br>Involucra digitalización de datos provenientes de un transductor, procesamiento con un sistema embebido y representación mediante un cartel de led.
+                                </p>
+                                <p>
+                                    Desarrollo de un sistema de monitoreo de temperatura de ambiente de una sala de compresores de aire.
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/industria/temperatura1.jpg" alt="Image">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <img class="img-fluid mb-4 mb-md-0 imagen-zoom" style="cursor: pointer;"  onclick="mostrarImagen(this)" src="img/industria/temperatura2.jpg" alt="Image">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    Involucra digitalización de datos provenientes de un transductor, procesamiento con un sistema embebido y representación mediante un cartel de led.
+                                </p>
+                            </div>
+
+                            
+
+
+                            <div class="col-sm-12 text-right">
+                                <a class="btn btn-link p-0" onclick="toggleIndustria()">Ocultar <i  class="fa fa-angle-up"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Blog List End -->
+                
+<!-- **************************************************************************************************************                 -->                
+                <!-- Footer Start -->
+                <div class="container py-4 bg-secondary text-center">
+                    <p class="m-0 text-white">
+                        &copy; <a class="text-white font-weight-bold" href="#">Pablo Daniel Viroulaud</a>
+                    </p>
+                </div>
+                <!-- Footer End -->
+            </div>
+        </div>
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+
+        <div class="modal fade" tabindex="-1" id="modal-imagen" aria-labelledby="modalLbl" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="dialog" id="dialogImagen">
+                <div class="modal-content">
+                    <div class="modal-header pt-2 pb-2 " style="align-self: flex-end;">  
+                        <a data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close" style="cursor: pointer;">
+                            <i class="fa fa-times"></i></a>                      
+
+                    </div>
+                    <div class="modal-body pt-2 pb-2">
+                        <img id="imagenZoom" class="img-fluid" src="" alt="">
+                    </div>        
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/removeSomee.js"></script>
+        <script>
+            // $(document).ready(function() {	
+
+            //     $('.imagen-zoom').click(function(e){
+            //         $('#imagenZoom').attr('src',e.target.src)
+            //         $('#modal-imagen').modal('show');
+            //     });
+            // });
+            function mostrarImagen(e){
+                $('#imagenZoom').attr('src',e.src)
+                $('#modal-imagen').modal('show');
+            }
+            function toggleProyectos(){
+                if ($('#flechaProyectos').hasClass('fa-angle-down')){
+                    $('#flechaProyectos').removeClass('fa-angle-down');
+                    $('#flechaProyectos').addClass('fa-angle-up');
+                    $('#detalleProyectos').removeClass('d-none');
+                }
+                else{
+                    $('#flechaProyectos').addClass('fa-angle-down');
+                    $('#flechaProyectos').removeClass('fa-angle-up');
+                    $('#detalleProyectos').addClass('d-none');
+                }
+            }
+            function toggleBalizamiento(){
+                if ($('#flechaBalizamiento').hasClass('fa-angle-down')){
+                    $('#flechaBalizamiento').removeClass('fa-angle-down');
+                    $('#flechaBalizamiento').addClass('fa-angle-up');
+                    $('#detalleBalizamiento').removeClass('d-none');
+                }
+                else{
+                    $('#flechaBalizamiento').addClass('fa-angle-down');
+                    $('#flechaBalizamiento').removeClass('fa-angle-up');
+                    $('#detalleBalizamiento').addClass('d-none');
+                }
+            }
+            function toggleIndustria(){
+                if ($('#flechaIndustria').hasClass('fa-angle-down')){
+                    $('#flechaIndustria').removeClass('fa-angle-down');
+                    $('#flechaIndustria').addClass('fa-angle-up');
+                    $('#detalleIndustria').removeClass('d-none');
+                }
+                else{
+                    $('#flechaIndustria').addClass('fa-angle-down');
+                    $('#flechaIndustria').removeClass('fa-angle-up');
+                    $('#detalleIndustria').addClass('d-none');
+                }
+            }
+        </script>
+    </body>
+</html>
